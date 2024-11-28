@@ -1,0 +1,19 @@
+This is a review of the manuscript "Mapping Electric Potential Lab" by Edwards et al. I recommend major revisions. The manuscript claims to examine the electric field and potential at various points within an aqueous solution in a prototype low cost electrophoresis rig.
+
+Title: The title sounds like a high school physics experiment; select a title that says better what the work is about.
+
+Abstract: The authors appear to have mis labeled sections, giving introduction first then abstrat. The abstract should be 1 paragraph that gives an overview and sets up why people should read the paper. The introduction follows (inverted pyramid broad to fine details) ending with the major research questions, testable hypotheses, or thing the group is out to test.
+
+In the section currently labeled "abstract" the authors claim their hypotheses were "proven to be accurate". This is the wrong verb. In science we never prove such things, we might prove mathematical statements in the sense of mathematical proof but for this work with measurements we can reject false hypotheses or provisionalyl accept others that are consistent with our data, but never "prove".
+
+Materials and methods: The authors could organize this better with subsections. Also they list some trivial stuff while not giving enough detail on specific items like the power supply, the meter, whether the material of the electrodes matters, the dimenisons and tpe of container etc.
+
+There are lots of unnecessary words ("aforementioned", "Due to the lack of opacicity of the container") and some ("efficiently conductive electric field") make no sense.
+
+The authors appear to use a code to graph and compute electric fields but do not specify the code, whether the source code is available, or the theory behind it. Later on they mention taking partial derivatives of V but do not explain how it was done with their measured data.
+
+Results: The table of results is OK but they do not identify the spatial coordinates of the 25 points. Units are not given on the graphs and some axes are unlabeled. The methods used to compute E should be in the methods section, not mixed with the results. Axes on the grid should be square if these are spatial coordinates that are square.
+
+Discussion: Discussion should all out figures by number, e.g. Fig 5 shows that... It would be nice to tie back to their stated application (low cost electrophoresis rig) a little more.
+
+Individual contributions should be as text, not a list. I.e. JS contributed blah... 
