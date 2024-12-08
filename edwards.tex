@@ -1,0 +1,209 @@
+\documentclass[10pt,journal,twoside]{IEEEtran}
+
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{cleveref}
+\crefname{equation}{}{}
+\Crefname{equation}{}{}
+\crefname{figure}{Fig.}{Figs.}
+\Crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Table}{Tables}
+\Crefname{table}{Table}{Tables}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{mhchem}
+
+\title{Electric Field Mapping for Cost-Effective Gel Electrophoresis Applications}
+\author{Ryan Edwards\thanks{Author for correspondence: 426redwards@frhsd.com}, Cameron Karabin, Chloe Li, Krish Patel, and Jake Schatz\thanks{Authors are with the Science \& Engineering Magnet Program, Manalapan High School, 20 Church LAne, Englishtown, NJ 07726, USA}}
+\date{\today}
+\markboth{Journal of Science \& Engineering, Vol.~1, No.~2,~December x 2024}{Edwards \MakeLowercase{\textit{et al.}}: Electric Field Mapping for Gel Electrophoresis}
+\setcounter{page}{5}
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In this experiment, we tested the functionality of a low-cost electrophoresis rig by utilizing two electrodes, a battery, and a voltmeter, to map the electric field and equipotential lines formed by a positive and negative charge placed in the rig. After placing a positive charge on the origin and a negative charge on the positive y-axis of the coordinate system in the electrophoresis rig (saltwater tub), we took voltage measurements across various chosen points in the container. Using these measurements, we drew the equipotential lines by identifying regions of equal voltage and then calculated/drew electric field lines. We hypothesized that equipotential lines would have a higher concentration closer to the origin, the voltage would be high near the positive charge and decrease as we move away and toward the ground, and the electric field would point away from the positive charge and toward the ground. Ultimately, our results aligned with our hypotheses, demonstrating the viability of this rig as an educational tool for biology students to use in an electrophoresis lab.
+\end{abstract}
+
+\begin{IEEEkeywords}
+equipotential lines, vector field, electric potential, saltwater conductivity
+\end{IEEEkeywords}
+
+
+
+
+
+\section{Introduction}
+\subsection{Theory}
+\IEEEPARstart{W}{hen} two or more charges are in the same vicinity, they exert a force on each other, either repulsive or attractive depending on whether the charge is positive or negative \cite{tipler}. As a result, an electric field is formed surrounding the electrical components, demonstrating the amount of electric force per unit charge exerted on a test charge in a certain region of space. Electric potential is the negative of the rate of change of the electric field with respect to position \cite{tipler}. Similar to the relationship between forces and the electric field, the electric potential (otherwise known as voltage) at a point is equal to the electric potential energy per charge at a point in space \cite{tipler}. Drawing equipotential lines is often significant because they indicate areas where electric potential is equal \cite{cantt-2013-equipotential,fongsuwan-2019-system}.
+
+\subsection{Hypotheses}
+Since the electric potential is inversely proportional to the distance to a charge, we hypothesized that these equipotential lines would have a higher concentration closer to the origin, near the positive charge. Furthermore, we hypothesized that the voltage would be high near the positive charge and decrease as we move away and toward ground since the electric potential is directly proportional to the charge. Lastly, we hypothesized that the electric field would point away from the positive charge and toward ground since positive charges repel positive test charges, and negative charges attract positive test charges. To test the validity of our hypotheses, we found the electric potential at multiple points in the first quadrant at various distances from the origin and mapped both the electric field lines and equipotential lines. After analyzing our data and results, our findings supported these hypotheses, aligning with theoretical predictions.
+
+
+
+
+
+\section{Materials and Methods}
+\subsection{Materials}
+We used two steel nuts, water, salt, a \qty{370}{\milli\liter} polypropylene food container (EasyFind; Rubbermaid; Atlanta, GA) to simulate a low cost electrophoresis rig \cite{campbell}. A whiteboard and a marker were also used to locate measurement points on a laminated piece of graph paper.. We recorded measurements using a multimeter, alligator clip leads, and a \qty{15}{\volt} power supply.  
+
+\subsection{Setup}
+To set up this experiment, we sketched an $xy$-plane on a laminated piece of grid paper as seen in \cref{fig:1}. This plane would be used to find equipotentials at various points throughout the electric field. We plotted 25 points, each roughly three grid boxes away from each other, which we set to be separated by one unit of measurement.
+\begin{figure}
+\begin{center}
+\includegraphics[width=5cm]{Figure 1.png}
+\end{center}
+\caption{The grid of points}
+\label{fig:1}    
+\end{figure}
+%To set up this experiment, we sketched an xy-plane on a laminated piece of grid paper. This plane would be used to find equipotentials at various points throughout the electric field. We plotted 25 points, each roughly 3 grid boxes away from each other, which we set to be separated by 1 unit of measurement.
+
+To create a conductive electric field to measure electric potential, we filled a small Tupperware container with water (roughly \qty{1}{\centi\meter} depth of water). Then, we added a pinch of salt to create the weak saline solution, providing a conductive medium for our electric field. After creating this solution, we placed the polypropylene container over the laminated plane, so that the measurement grid would be easily visible during measurements (see \cref{fig:2}). 
+\begin{figure}
+\begin{center}
+\includegraphics[width=7.5cm]{Figure 2.png}
+\end{center}
+\caption{Diagram of the setup}
+\label{fig:2}    
+\end{figure}
+
+\subsection{Measurements}
+Incorporating the electrical portion of the experiment, we acquired both a voltmeter and a power supply. The power supply would introduce charge into the aqueous solution and the voltmeter would be the means of measuring potential throughout the electric field. For the two poles of the power supply, we attached nuts to the end of them to act as electrodes. The positive and negative poles were then placed at the origin and point (0,4), respectively. We then applied \qty{15}{\volt} to the saltwater system at the electrodes. The setup is shown in \cref{fig:3}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=5cm]{Figure 3.png}
+\end{center}
+\caption{Collecting the voltages with the multimeter}
+\label{fig:3}
+\end{figure}
+Then, we placed the negative (black) terminal of the multimeter at point (0,4). The positive (red) terminal was then placed at each of the plotted points. For each point the positive terminal was placed at, the electric potential in relation to ground was tracked in a spreadsheet. 
+
+\subsection{Analyses}
+To create the equipotential lines, we graphed the voltage along the $xy$ plane and drew lines where the voltage is similar. Again due to the electric field, the highest concentration of equipotential lines should be closest to the charge.
+
+To obtain electric fields, we calculated the gradient of the measured potential $V$ to evaluate gradient of the potential \cite{tipler,stewart,cantt-2013-equipotential,fongsuwan-2019-system}:
+\begin{equation}
+\vec{E} = -\nabla V = \left( -\frac{\partial V}{\partial x}, -\frac{\partial V}{\partial y} \right)
+\label{eq:1}
+\end{equation}
+By taking the partial derivatives of voltage with respect to the $x$ and $y$ directions, we get the electric field vectors at any specific point, which can then help visualize the change in potential.
+
+To compute and graph the lines, we utilized Python with the NumPy \cite{harris2020array} and Matplotlib \cite{hunter:2007} libraries. Partial derivatives were calculated numerically using a central difference method implemented in Python. The source code and raw data used for these computations is available on Google Colab at \url{https://colab.research.google.com/drive/1tGvBPIV3KCg6DGzSNkJwY9w86lo38hpc?usp=sharing} for reproducibility.
+
+
+
+
+
+
+\section{Results}
+\Cref{fig:4,fig:5} show the measured potential values at all 25 test points and the equipotential curves that result. 
+\begin{figure}
+\begin{center}
+\includegraphics[width=8.75cm]{Figure 4.png}
+\end{center}
+\caption{The potential of all 25 points in the experiment in a \qty{1}{\centi\meter} square grid pattern, where the positive charge is at (0,0), and the furthest measured point was \qty{4}{\centi\meter} right and \qty{4}{\centi\meter} above it.}
+\label{fig:4}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=7.25cm]{Figure 5.png}
+\end{center}
+\caption{The equipotential lines from the points in the experiment}
+\label{fig:5}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=7.25cm]{Figure 6.png}
+\end{center}    
+\caption{The electric field vectors from the experiment}
+\label{fig:6}
+\end{figure}
+\Cref{fig:6} shows us how the potential changes as it gets further from the charge. The electric field closer to the origin has a greater magnitude and it exponentially decreases as it gets further away. The change in potential will have the same magnitude but the opposite sign, which means it increases exponentially as it gets closer to the origin.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=7.25cm]{Figure 7.png}
+\end{center}
+\caption{The equipotential and electric field lines}
+\label{fig:7}
+\end{figure}
+By overlaying the electric field with the equipotential lines in \cref{fig:7}, it further confirms how along the equipotential lines the potential will be equal in magnitude and that the potential will change according to the electric field. The electric field vectors are also perpendicular to the equipotential lines, which confirms that there is no potential difference along the region and that no work must be done to move along it. 
+
+
+
+
+
+
+\section{Discussion}
+Examining these equipotentials, vector fields, and overall methodology of this experiment lead to a multitude of questions about both the lab setup and findings. 
+
+Starting with the lab setup, one may want to understand the necessity of salt as part of the aquatic solution. As shown by \cref{fig:8}, salt proves to be a necessary solute in this system because water is not electrically conductive on its own. It lacks ionic particles that carry current. However, salt (\ce{NaCl}; often split into \ce{Na^+} and \ce{Cl^-} ions) carries current throughout the system \cite{campbell}. In order to measure electric potential, the electrophoresis rig must be of a conductive substance. 
+\begin{figure}
+\begin{center}
+\includegraphics[width=4.25cm]{Figure 8.png}
+\end{center}
+\caption{The movement of charged \ce{NaCl} particles in solution}
+\label{fig:8}
+\end{figure}
+
+Moving on, there is a significant relationship between the derivative of the change in potential with respect to the distance away from the centered point ($\frac{dV}{dr}$). As depicted by \cref{fig:4}, when the distance from the centered point (0,4) increases, the rate of change of the potential changes at a slower rate. Furthermore, the equipotential lines, lines that show equivalent electric potential, demonstrate this relationship, getting closer together as the distance from point (0,4) increases.
+
+We believe that we successfully achieved our goal in our expedition to create a low-cost electrophoresis rig. However, our rig and the results it produced were affected by some external complications. One major source of error was the reliance on manual measurements of electric potential at the points, which could have led to inconsistencies in readings due to slight misplacements of the probes. Additionally, the salt concentration in the solution may not have been perfectly uniform, potentially impacting conductivity and introducing slight variations in electric field measurements. 
+
+To improve this experiment, we could use a digital voltmeter, which would ensure precise voltage readings. Additionally, a standardized solution with carefully measured salt concentration could guarantee uniform conductivity. Conducting the experiment in a controlled environment free from any other external variables would further improve the reliability of our results.
+
+
+
+
+
+\section{Conclusion}
+Analyzing the electric fields and potentials across the low-cost electrophoresis rig along with the plotted equipotential lines, the results support our central hypotheses that stated both the potential, measured in voltage, would be greater closer to the origin (positive charge) as well as the increase in the concentration of equipotential curves. By mapping voltage readings at various points, we observed that equipotential lines concentrated near the positive charge, reflecting the strength and direction of the electric field. Despite minor limitations in measurement precision and setup stability, our results were consistent with expected behavior, highlighting both the effectiveness of our experimental approach and the fundamental properties of electric fields and potentials.
+
+
+
+
+
+
+\section{Acknowledgement}
+We thank several anonymous reviewers whose comments helped our manuscript. JS was responsible for drafting the abstract and contributing to the introduction. CK conducted data collection, contributed to the experimental design, and assisted in drafting the abstract. RE contributed to the introduction, methods, discussion, and conclusion sections. KP analyzed and graphed the data, drafted the results section, and contributed to the discussion. CL contributed to the methods and conclusion sections and assisted with data collection. All authors reviewed and approved the final paper.
+
+
+
+
+
+%\begin{thebibliography}{00}
+%\bibitem{b1} A Cantt, B. Kumar, and I. Singh, ``Equipotential Surface Plotting'' Brooklyn College, vol.217, March 2013.
+%\bibitem{b2} C Fongsuwan et al 2019, ``A system displaying equipotential lines using Python'' J. Phys.: Conf. Ser. 1380 012163
+%\end{thebibliography}
+
+\bibliographystyle{IEEEtran}
+\bibliography{lab.bib}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{redwards.jpeg}}]{Ryan Edwards} is a senior in the Science and Engineering Magnet Program at Manalapan High School. His interests include predicting congestive heart failure using convolutional neural networks and the magical world of science and engineering.
+\end{IEEEbiography}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{ckarabin.jpeg}}]{Cameron Karabin} is a senior in the Science and Engineering Magnet Program at Manalapan High School. He is also an intern at Girl in Space Club.
+\end{IEEEbiography}
+\vfill
+\newpage 
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{cli.jpeg}}]{Chloe Li} is a senior in the Science and Engineering Magnet Program at Manalapan High School. She is also an intern at the Monmouth County Engineering Department working on major architectural projects.
+\end{IEEEbiography}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{kpatel.jpeg}}]{Krish Patel} is a senior in the Science and Engineering Magnet Program at Manalapan High School. He is also an intern at Commvault in Tinton Falls, NJ detecting anomalous changes to the Windows Hive registry. 
+\end{IEEEbiography}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{jschatz.jpeg}}]{Jake Schatz} is a senior in the Science and Engineering Magnet Program at Manalapan High School. His interests include the magical world of microsphere drug delivery. 
+\end{IEEEbiography}
+\vfill
+\end{document}
