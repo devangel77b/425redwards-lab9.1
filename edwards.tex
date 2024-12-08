@@ -22,6 +22,15 @@
 \date{\today}
 \markboth{Journal of Science \& Engineering, Vol.~1, No.~2,~December x 2024}{Edwards \MakeLowercase{\textit{et al.}}: Electric Field Mapping for Gel Electrophoresis}
 \setcounter{page}{5}
+\newcommand{\keywords}{equipotential lines, vector field, electric potential, saltwater conductivity}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={\@author},
+pdfsubject={physics},
+pdfkeywords={\keywords}}}
+\makeatother
 
 
 
@@ -37,7 +46,7 @@ In this experiment, we tested the functionality of a low-cost electrophoresis ri
 \end{abstract}
 
 \begin{IEEEkeywords}
-equipotential lines, vector field, electric potential, saltwater conductivity
+\keywords
 \end{IEEEkeywords}
 
 
