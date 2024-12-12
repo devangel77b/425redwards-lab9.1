@@ -74,7 +74,7 @@ To set up this experiment, we sketched an $xy$-plane on a laminated piece of gri
 \begin{center}
 \includegraphics[width=5cm]{Figure 1.png}
 \end{center}
-\caption{The grid of points}
+\caption{The grid of points. Each square is 0.25 inch (\qty{0.635}{\centi\meter}). Measurement grid points are 3 grid squares (\qty{1.905}{\centi\meter}) in $x$ and 4 grid squares (\qty{2.54}{\centi\meter}) in $y$.}
 \label{fig:1}    
 \end{figure}
 %To set up this experiment, we sketched an xy-plane on a laminated piece of grid paper. This plane would be used to find equipotentials at various points throughout the electric field. We plotted 25 points, each roughly 3 grid boxes away from each other, which we set to be separated by 1 unit of measurement.
@@ -117,20 +117,32 @@ To compute and graph the lines, we utilized Python with the NumPy \cite{harris20
 
 
 \section{Results}
-\Cref{fig:4,fig:5} show the measured potential values at all 25 test points and the equipotential curves that result. 
-\begin{figure}
+\Cref{tab:1} shows the potential of all 25 points in the experiment in a \qty{1}{\centi\meter} square grid pattern, where the positive charge is at (0,0), and the furthest measured point was \qty{4}{\centi\meter} right and \qty{4}{\centi\meter} above it. The data of \cref{tab:1} are plotted in \cref{fig:5}, which shows the equipotential curves that result. 
+\begin{table}
+\caption{Potential values in \unit{\volt} at all 25 measurement points}
+\label{tab:1}
 \begin{center}
-\includegraphics[width=8.75cm]{Figure 4.png}
+%\includegraphics[width=8.75cm]{Figure 4.png}
+\begin{tabular}{cccccc}
+\toprule
+& \multicolumn{5}{c}{$x$ (\unit{\centi\meter})} \\
+$y$ (\unit{\centi\meter}) & 0 & 1 & 2 & 3 & 4 \\
+\midrule 
+4 & 0.8 & 2 & 3 & 3.4 & 3.8 \\
+3 & 2.5 & 3.5 & 4.5 & 4.7 & 5 \\
+2 & 5 & 6.5 & 6.6 & 6.5 & 6.3 \\
+1 & 8.5 & 8 & 10.5 & 8.2 & 7. 5 \\
+0 & 15 & 12.7 & 11 & 9 & 7.7 \\ 
+\bottomrule
+\end{tabular}
 \end{center}
-\caption{The potential of all 25 points in the experiment in a \qty{1}{\centi\meter} square grid pattern, where the positive charge is at (0,0), and the furthest measured point was \qty{4}{\centi\meter} right and \qty{4}{\centi\meter} above it.}
-\label{fig:4}
-\end{figure}
+\end{table}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=7.25cm]{Figure 5.png}
 \end{center}
-\caption{The equipotential lines from the points in the experiment}
+\caption{The equipotential lines from the points in the experiment. Data from \cref{tab:1}.}
 \label{fig:5}
 \end{figure}
 
@@ -169,7 +181,7 @@ Starting with the lab setup, one may want to understand the necessity of salt as
 \label{fig:8}
 \end{figure}
 
-Moving on, there is a significant relationship between the derivative of the change in potential with respect to the distance away from the centered point ($\frac{dV}{dr}$). As depicted by \cref{fig:4}, when the distance from the centered point (0,4) increases, the rate of change of the potential changes at a slower rate. Furthermore, the equipotential lines, lines that show equivalent electric potential, demonstrate this relationship, getting closer together as the distance from point (0,4) increases.
+Moving on, there is a significant relationship between the derivative of the change in potential with respect to the distance away from the centered point ($\frac{dV}{dr}$). As depicted by \cref{tab:1}, when the distance from the centered point (0,4) increases, the rate of change of the potential changes at a slower rate. Furthermore, the equipotential lines, lines that show equivalent electric potential, demonstrate this relationship, getting closer together as the distance from point (0,4) increases.
 
 We believe that we successfully achieved our goal in our expedition to create a low-cost electrophoresis rig. However, our rig and the results it produced were affected by some external complications. One major source of error was the reliance on manual measurements of electric potential at the points, which could have led to inconsistencies in readings due to slight misplacements of the probes. Additionally, the salt concentration in the solution may not have been perfectly uniform, potentially impacting conductivity and introducing slight variations in electric field measurements. 
 
@@ -210,7 +222,7 @@ We thank several anonymous reviewers whose comments helped our manuscript. JS wa
 \newpage 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{cli.jpeg}}]{Chloe Li} is a senior in the Science and Engineering Magnet Program at Manalapan High School. She is also an intern at the Monmouth County Engineering Department working on major architectural projects.
 \end{IEEEbiography}
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{kpatel.jpeg}}]{Krish Patel} is a senior in the Science and Engineering Magnet Program at Manalapan High School. He is also an intern at Commvault in Tinton Falls, NJ detecting anomalous changes to the Windows Hive registry. 
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{kpatel.jpeg}}]{Krish Patel} is a senior in the Science and Engineering Magnet Program at Manalapan High School and a member of the school bowling team. He is also an intern at Commvault in Tinton Falls, NJ detecting anomalous changes to the Windows Hive registry. 
 \end{IEEEbiography}
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{jschatz.jpeg}}]{Jake Schatz} is a senior in the Science and Engineering Magnet Program at Manalapan High School. His interests include the magical world of microsphere drug delivery. 
 \end{IEEEbiography}
